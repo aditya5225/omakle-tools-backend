@@ -1,11 +1,12 @@
+
+
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/maudgetsDb', {
+mongoose.connect('mongodb://localhost:27017/omakleDb', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
 }); // connect to our database
 
-// db.on('error', console.error.bind(console, 'connection error:'));
 const db = mongoose.connection
 
 db.on('error', console.error.bind(console, 'connection error:'))

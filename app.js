@@ -1,7 +1,7 @@
 
 var express = require("express");
 var app = express();
-const mongodb = require("./server/mongo/config");
+const mongodb = require("./server/mongo/connection");
 var cors = require("cors");
 // const socketio = require("socket.io");
 var bodyParser = require("body-parser");

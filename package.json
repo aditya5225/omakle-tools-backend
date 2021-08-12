@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "description": "omakle-tools",
   "main": "app.js",
-  "proxy": " https://admin.i-pay.com.au",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
+    "start": "next build && next start -p $PORT",
     "start-server": "node app.js"
   },
   "author": "",
