@@ -33,10 +33,10 @@ app.use(
 );
 
 
-var api_wallet_router = require("./server/routes/wallet");
+var test_api_router = require("./server/routes/test_api");
 
 
-app.use("/api/wallet", api_wallet_router);
+app.use("/api", test_api_router);
 
 
 server.listen(5000);

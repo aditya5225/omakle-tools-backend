@@ -1,9 +1,9 @@
 
-var walletsdb = require("../mongo/models/wallets");
+// var walletsdb = require("../mongo/models/wallets");
 
 
 
-exports.wallet_details = (req, res, next) => {
+exports.test_api = (req, res, next) => {
 
     console.log(req.body);
 
