@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "omakle-tools",
   "main": "app.js",
+  "proxy": "https://dmapi.omakle.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "next build && next start -p $PORT",
+    "start": "nodemon app.js",
     "start-server": "node app.js"
   },
   "author": "",
