@@ -12,7 +12,7 @@ const path = require('path');
 
 var corsOptions = {
 	origin: [
-		"https://dmapi.omakle.com",
+		"https://dm.omakle.com",
 		"http://localhost:3000",
 		"*",
 	],
