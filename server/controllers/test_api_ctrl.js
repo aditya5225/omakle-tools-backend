@@ -10,7 +10,7 @@ exports.test_api = (req, res, next) => {
     var response = '';
 
     try {
-        response = 'Hello World!!! test demo'
+        response = 'Hello World!!! test'
     } catch (err) {
         console.log(`Error Occured: ${err}`);
     }
