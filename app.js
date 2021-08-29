@@ -7,11 +7,12 @@ var cors = require("cors");
 var bodyParser = require("body-parser");
 const http = require("http");
 const server = http.createServer(app);
+const path = require('path');
 
 
 var corsOptions = {
 	origin: [
-		// "https://demo.business.i-pay.com.au",
+		"https://dmapi.omakle.com",
 		"http://localhost:3000",
 		"*",
 	],
@@ -32,6 +33,13 @@ app.use(
 	})
 );
 
+
+// app.use(express.static(path.resolve(__dirname, '../client/build')));
+
+app.use("/static", express.static(__dirname + "/staticdata"));
+app.use("/images", express.static(__dirname + "/images"));
+app.use("/uploads", express.static(__dirname + "/uploads"));
+app.use("/static-images", express.static(__dirname + "/static-images"));
 
 var test_api_router = require("./server/routes/test_api");
 
