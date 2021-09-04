@@ -9,13 +9,14 @@ exports.downloadYoutubeThumbnail = async (req, res, next) => {
 
     try {
 
-        let getBufferData = await Jimp.read(imageUrl);
+        // let getBufferData = await Jimp.read(imageUrl);
 
-        let base64Data = await getBufferData.getBase64Async(Jimp.MIME_PNG);
+        // let base64Data = await getBufferData.getBase64Async(Jimp.MIME_PNG);
 
         response = {
             error: false,
-            data: base64Data,
+            // data: base64Data,
+            data: imageUrl,
             message: 'converted succefully'
         };
 
