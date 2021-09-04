@@ -41,10 +41,10 @@ app.use("/images", express.static(__dirname + "/images"));
 app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use("/static-images", express.static(__dirname + "/static-images"));
 
-var test_api_router = require("./server/routes/test_api");
+var test_api_router = require("./server/routes/downloadYtThumbRoutes");
 
 
-app.use("/api", test_api_router);
+app.use("/tools", test_api_router);
 
 
 server.listen(5000);
